@@ -165,12 +165,3 @@ int main()
 
 
 
-// Parameters
-// Pass-by-value
-// return statement
-// Default parameters
-// Pass-by-reference
-// inline functions 
-// Return reference
-// Scope
-// Storage Class
