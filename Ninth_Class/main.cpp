@@ -98,6 +98,8 @@
 //     funct2(result,a,b);
 //     return result;
 // }
+
+
 // int main()
 // {
 //     int x={10};
@@ -107,3 +109,58 @@
 //     z=funct1(x,y);
 //     cout<<z<<endl;
 // }
+
+
+// Inline Function:
+/*
+ *  Function call have certain amount of overhead .
+ *  In this situation we can suggest compiler to compile  the simple function inline
+ *  -Avoids function call overhead.
+ *  -Generate inline assembly code
+ *  -Faster
+ *  -Could cause code bloat
+ * */
+ 
+ 
+ //Example Inline function
+ 
+// #include<iostream>
+// inline int add_numbers(int a,int b)
+// {
+//     return a+b;
+// }
+// int main()
+// {
+//     int result{0};
+//     result =add_numbers(100,200);
+//     std::cout <<result;
+//     return 0;
+// }
+// 
+ 
+ 
+ //Scope Rules:
+ /*
+  * C++ uses scope rules to determine where an identifier can be used.
+  * C++ uses static or lexical scoping .
+  * Local or block scope/Global scope
+  * */
+  //Local/Global scope:
+  /*
+   * Identifiers declared in a block : {}
+   * Function parameters have blockscope.
+   * only visible within the block {} wgere deckared,
+   * Function local variables are only active while the function is executing.
+   * Local variables are NOT preserved between the function calls.
+   * With the nested block inner blocks can 'see' but outer block cannot 'see' in.
+   * */
+   
+   
+   
+   //Global scope:
+   /*
+    * Identifier declared outside any function/class.
+    * Visible to all part of the program afterglobal Identifier has been declared.
+    * Global constants are OK.
+    * Try not to use variables as global.
+    */
